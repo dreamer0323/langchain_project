@@ -42,4 +42,10 @@ user_input = HumanMessage(
 messages = [user_input]
 
 print("="*50,"\n模型回复:")
-pprint(deepseek_llm.invoke(messages))
+response = deepseek_llm.invoke(messages)
+
+pprint(response)
+print("="*50,"\n模型回复的content:")
+print(response.content)
+print("="*50,"\n模型回复的content_blocks:")
+pprint(response.content_blocks)
