@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/31625/.claude/**)",
+      "Read(//c/Users/31625/.claude/plugins/**)",
+      "Read(//c/Users/31625/.claude/plugins/cache/**)",
+      "Read(//d/dev/agent/permission-notify//**)",
+      "Read(//d/dev/agent/permission-notify/hooks//**)",
+      "Read(//c/Users/31625/.claude/plugins/cache/permission-notify/permission-notify/**)",
+      "Read(//d/dev/agent/permission-notify/.claude-plugin/**)",
+      "Read(//c/Users/31625/.claude/plugins/cache/permission-notify/permission-notify/0.1.0/**)",
+      "Read(//c/Users/31625/.claude/plugins/cache/permission-notify/permission-notify/0.1.0/hooks/**)",
+      "Read(//d/dev/agent/permission-notify/hooks/**)",
+      "Bash(cat ~/.claude/plugins/cache/permission-notify/permission-notify/0.1.0/.claude-plugin/plugin.json 2>/dev/null | head -40)",
+      "Read(//c/Users/31625/.claude/plugins/cache/permission-notify/permission-notify/0.1.0/.claude-plugin/**)",
+      "Bash(ls -lat ~/.claude/logs/ 2>/dev/null | head -10; echo \"---projects---\"; ls -lat ~/.claude/projects/*/ 2>/dev/null | head -20)",
+      "Read(//c/Users/31625/.claude/projects/**)",
+      "Bash(echo \"=== ~/.claude/sessions 最新文件 ===\"; ls -lat ~/.claude/sessions/ 2>/dev/null | head; echo; echo \"=== 搜会话日志中的 hook 执行痕迹（当前活动会话 10228 对应） ===\"; grep -rl \"PermissionRequest\\\\|permission-notify\\\\|hook\" ~/.claude/sessions/ 2>/dev/null | head -5)",
+      "Read(//c/Users/31625/.claude/sessions/**)",
+      "Bash(cat ~/.claude/sessions/10228.json 2>/dev/null)",
+      "Read(//d/dev/agent/permission-notify/**)",
+      "Bash(ssh -V)",
+      "Bash(sshpass -V)"
+    ],
+    "additionalDirectories": [
+      "D:\\dev\\agent\\permission-notify\\hooks"
+    ]
+  }
+}
